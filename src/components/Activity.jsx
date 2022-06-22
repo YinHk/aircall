@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import axios from 'axios';
-import { TableSortLabel, Tabs } from '@mui/material';
-import { Container, TabWrapper, FeedTab, ArchiveTab, ArchiveBtn } from '../style/activityStyle';
+import { Tabs } from '@mui/material';
+import { Container, FeedTab, ArchiveTab, ArchiveBtn } from '../style/activityStyle';
 
 import Menu from "./Menu";
 
