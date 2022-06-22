@@ -2,7 +2,8 @@ import moment from "moment";
 
 export const transformDate = (date) => {
    const dateObj = new Date(date);
-   return moment(dateObj).format("MMM, DD YYYY");
+   console.log(moment(dateObj).format("MMM, DD YYYY").toString().trim());
+   return moment(dateObj).format("MMM, DD YYYY").toString().trim();
 }
 
 export const formatAMPM = (date) => {

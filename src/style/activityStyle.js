@@ -1,27 +1,25 @@
 import { styled } from '@mui/system';
-import { Tabs, Tab, Button } from '@mui/material';
+import { Tab, Button } from '@mui/material';
 
 const Container = styled('div')({
     padding: 3,
     overflowY: 'auto'
 });
 
-const TabWrapper = styled(Tabs)({
-});
-
 const FeedTab = styled(Tab)({
     borderTopLeftRadius: 25,
-    marginRight: 0.5,
+    marginRight: 1,
     color: '#FFFFFF',
-    background: '#3ca211',
-    
+    background: '#12aa11',
+    textTransform: 'none'
 });
 
 const ArchiveTab = styled(Tab)({
     borderTopRightRadius: 25,
-    marginLeft: 0.5,
+    marginLeft: 1,
     color: '#FFFFFF',
-    background: '#3ca211'
+    background: '#3ca211',
+    textTransform: 'none'
 });
 
 const ArchiveBtn = styled(Button)({
@@ -29,10 +27,9 @@ const ArchiveBtn = styled(Button)({
     marginTop: 2,
     color: '#3ca211',
     borderColor: '#3ca211',
-    borderBottomLeftRadius: 25,
-    borderBottomRightRadius: 25
+    textTransform: 'none'
 })
 
-export { Container, TabWrapper, FeedTab, ArchiveTab, ArchiveBtn };
+export { Container, FeedTab, ArchiveTab, ArchiveBtn };
 
 

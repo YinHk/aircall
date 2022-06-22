@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import axios from 'axios';
+import { TableSortLabel, Tabs } from '@mui/material';
 import { Container, TabWrapper, FeedTab, ArchiveTab, ArchiveBtn } from '../style/activityStyle';
 
 import Menu from "./Menu";
@@ -93,13 +94,18 @@ const Activity = (props) => {
 
     return (
       <Container>
-        <TabWrapper variant="fullWidth" value={value} onChange={handleChange}>
+        <Tabs 
+            variant="fullWidth" 
+            value={value} 
+            onChange={handleChange}
+        >
           <FeedTab label='Activity Feed' value='feed'/>
           <ArchiveTab label='Archived' value='archived'/>
-        </TabWrapper>
+        </Tabs>
         { value==='feed'? 
             <ArchiveBtn 
                variant="outlined"
+               
                onClick={handleArchiveAll}
             >
                 Archive all calls
@@ -110,7 +116,7 @@ const Activity = (props) => {
             >
                 unarchive all calls
             </ArchiveBtn> }
-        <Menu {...menuProps} />
+        <div><Menu {...menuProps} /></div>
       </Container>
     );
 }
