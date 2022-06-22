@@ -15,4 +15,4 @@ The page will reload when you make changes.\
 You may also see any lint errors in the console.
 
 ### Screenshot
-![](./2022-06-22 12_22_03-React App.png)
+![](./aircall-screenshot.png)
