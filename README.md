@@ -1,6 +1,7 @@
-# Getting Started with Create React App
+# Aircall
+This is just a react app showcase to archive and unarchive the list item.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This app was built with using React, Material-UI and Axios
 
 ## Available Scripts
 
